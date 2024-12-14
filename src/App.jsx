@@ -18,7 +18,7 @@ function App() {
     e.preventDefault();
     if (name.length >= 5) {
       const user = {
-        id: Date.now(), // Unique identifier
+        id: Date.now(),
         name:name,
         desc:desc,
         rate:rate,
@@ -26,7 +26,7 @@ function App() {
         deposit:deposit,
         status:status,
       };
-      
+
       setData([...data, user]);
       setName('');
       setDesc('');
